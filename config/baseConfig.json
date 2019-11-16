@@ -1,0 +1,9 @@
+{
+    "entryScript": "../src/entry_client.js",
+    "entryHtml": "../src/index.html",
+    "port": "8088",
+    "host": "localhost",
+    "isTs": "false",
+    "output": "..dist",
+    "outPutName": "index.js"
+}

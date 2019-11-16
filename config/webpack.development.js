@@ -1,4 +1,5 @@
 const { p } = require('./webpack.baseConfig');
+console.log(p);
 
 
 module.exports = function () {
