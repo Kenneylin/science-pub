@@ -21,8 +21,7 @@ export default class View extends PureComponent {
                     <div className='content-wrapper'>
                         {renderRoutes(route.routes)}
                     </div>
-                </div>
-               
+                </div>              
             </div>
         );
     }
