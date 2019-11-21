@@ -5,7 +5,10 @@ export default class Header extends Component {
     render() {
         console.log(this.props);
         return (
-            <div>header should show img {this.props.location.pathname}</div>
+            <div>
+                <img src="../src/static/img/duck.png"></img>
+                {this.props.location.pathname}
+            </div>
         );
     }
 }

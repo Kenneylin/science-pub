@@ -17,7 +17,7 @@ export default class Sider extends Component {
                     <li><a href="">Publication requirements</a></li>
                     <li><a href="">Deadlines and fees</a></li>
                     <li><a href="">Submit a manuscipt</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="http://localhost:8088/contacts">Contacts</a></li>
                 </ul>
                 <div className="copy">
                     <div>© 2019 Science Events Ltd</div>

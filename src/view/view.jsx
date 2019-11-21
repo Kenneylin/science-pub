@@ -3,6 +3,7 @@ import Sider from '../component/Sider';
 import Header from '../component/Header';
 import '../static/css/right-wrapper.less';
 import '../static/css/content.less'
+import '../static/css/content-wrapper.less'
 
 import { renderRoutes } from 'react-router-config';
 

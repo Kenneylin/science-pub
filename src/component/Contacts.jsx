@@ -12,7 +12,7 @@ export default class Contact extends Component {
         return (
             <div className='contacts'>
                 <table style={{ whiteSpace: 'pre-wrap'}}>
-                    <thead>
+                    <thead className='thead'>
                         <tr>
                             <th>Contacts</th>
                         </tr>
