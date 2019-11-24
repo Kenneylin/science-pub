@@ -1,11 +1,9 @@
 import Home from './component/Home.jsx';
-import Contacts from './component/Contacts';
-import Myreact from './component/Myreact';
-import View from './view/View';
-import Commit from './component/Commit.jsx';
-
+import Contacts from './component/Contacts.jsx';
+import View from './view/View.jsx';
+import Publication from '../src/component/Publication';
 const routes = [
-    /*
+    /*/
      {
          path: '/',
          component: Home,
@@ -18,25 +16,20 @@ const routes = [
         exact: false,
         routes: [
             {
-                path: '/view',
+                path: '/journals',
                 component: Home,
                 exact: true,
             },
             {
-                path: '/contacts',
+                path: '/Contacts',
                 component: Contacts,
                 exact: true,
             },
             {
-                path: '/commit',
-                component: Commit,
+                path: '/Publication',
+                component: Publication,
                 exact: true,
-            },
-            {
-                path: '/myreact',
-                component: Myreact,
-                exact: true,
-            },
+            },         
         ],
     },
 ];

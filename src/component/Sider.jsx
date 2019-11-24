@@ -1,32 +1,61 @@
 import React, { Component } from 'react';
-import '../static/css/sider.less';
+import '../static/css/Sider.less';
 
 export default class Sider extends Component {
-    render() {
-        let str=" © 2019 Science Events Ltd</br>huanhang";
+    handleClick (e) {
+        const { pathMap } = this.props;
+        e.preventDefault();
+        if (e.target.localName !== 'a') return;
+        const item = pathMap.find((item) => item.name === e.target.innerText);
+        item && item.path && this.props.history.push(item.path);
+    }
+    
+    render () {
+        const { pathMap } = this.props;
+        const list = pathMap.map((item, index) => 
+            <li key={index}>
+                <a href='/'>{item.name}</a>
+            </li>
+        );
         return (
-            <div className='Sider'>
-                <div>
-                    <p>International</p>
-                    <p>Scientific</p>
-                    <p>Publications</p>
-                </div>
-                <ul>
-                    <li><a href="">Our journals</a></li>
-                    <li><a href="">Seach</a></li>
-                    <li><a href="">Publication requirements</a></li>
-                    <li><a href="">Deadlines and fees</a></li>
-                    <li><a href="">Submit a manuscipt</a></li>
-                    <li><a href="http://localhost:8088/contacts">Contacts</a></li>
-                </ul>
-                <div className="copy">
-                    <div>© 2019 Science Events Ltd</div>
-                    <div>
-                        <a href="">Terms of Use</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-                        <a href="">Privacy Policy</a>
+            <div className='nv'>
+                    <div className="p">
+                         <div>International</div>
+                         <div>Scientific</div>
+                         <div>Publications</div>
                     </div>
-                </div>
+                <ul id='nav' onClick={(e) => this.handleClick(e)}>
+                    {list}
+                </ul>
             </div>
         );
     }
 }
+Sider.defaultProps = {
+    pathMap: [
+        {
+            name: 'Our journals',
+            path: '/home',
+        },
+        {
+            name: 'Seach',
+            path: '/callForPapers',
+        },
+        {
+            name: 'Publication requirements',
+            path: '/Publication',
+        },
+        {
+            name: 'Deadlines and fees',
+            path: '/editorial',
+        },
+        {
+            name: 'Submit a manuscipt',
+            path: '/contact',
+        },
+        {
+            name: 'Contacts',
+            path: '/contacts',
+        },
+    ],
+};
