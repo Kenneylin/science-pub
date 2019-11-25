@@ -39,7 +39,7 @@ Sider.defaultProps = {
         },
         {
             name: 'Seach',
-            path: '/callForPapers',
+            path: '/Seach',
         },
         {
             name: 'Publication requirements',
@@ -47,11 +47,11 @@ Sider.defaultProps = {
         },
         {
             name: 'Deadlines and fees',
-            path: '/editorial',
+            path: '/Deadlines',
         },
         {
             name: 'Submit a manuscipt',
-            path: '/contact',
+            path: '/Submit',
         },
         {
             name: 'Contacts',

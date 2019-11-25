@@ -44,7 +44,8 @@ export default class Contact extends Component {
                         <div>Email</div>
                         <div><a style={{
                              color: '#007399',
-                        }}href='office@scientific-publications.net'>office@scientific-publications.net</a></div>
+                        }}href='office@scientific-publications.net'>office@scientific-publications.net</a>
+                        </div>
                     </div>
                 </div>
             </div>

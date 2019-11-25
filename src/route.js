@@ -2,6 +2,7 @@ import Home from './component/Home.jsx';
 import Contacts from './component/Contacts.jsx';
 import View from './view/View.jsx';
 import Publication from '../src/component/Publication';
+import Deadlines from '../src/component/Deadlines';
 const routes = [
     /*/
      {
@@ -29,7 +30,12 @@ const routes = [
                 path: '/Publication',
                 component: Publication,
                 exact: true,
-            },         
+            },  
+            {
+                path: '/Deadlines',
+                component: Deadlines,
+                exact: true,
+            },           
         ],
     },
 ];
