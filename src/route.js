@@ -3,6 +3,7 @@ import Contacts from './component/Contacts.jsx';
 import View from './view/View.jsx';
 import Publication from '../src/component/Publication';
 import Deadlines from '../src/component/Deadlines';
+import Search from './component/Search';
 const routes = [
     /*/
      {
@@ -35,7 +36,12 @@ const routes = [
                 path: '/Deadlines',
                 component: Deadlines,
                 exact: true,
-            },           
+            },   
+            {
+                path: '/Search',
+                component: Search,
+                exact: true,
+            },               
         ],
     },
 ];
