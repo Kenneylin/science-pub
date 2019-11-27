@@ -38,8 +38,8 @@ Sider.defaultProps = {
             path: '/home',
         },
         {
-            name: 'Seach',
-            path: '/Seach',
+            name: 'Search',
+            path: '/Search',
         },
         {
             name: 'Publication requirements',
