@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-//import '../static/css/Sider.less';
+
 
 export default class Search extends Component { 
     render () {        
         return (
             <div>
-                Search
+                <h1 style={{fontSize:24, color: '#007399',margin: '0 0 20px 0',lineHeight:"36px" }}>Search</h1>
                 <Textbutton/>
             </div>
-           
         );
     }
 }
@@ -52,7 +51,7 @@ class Textbutton extends React.Component{
 
                 <p>{this.state.arrselect.join("-")}</p>
 
-                <button content={this.state.text}>Search</button>
+                <button style={{padding: "5px 10px",}} content={this.state.text}>Search</button>
             </div>
         );
     }
@@ -61,9 +60,8 @@ class Textbutton extends React.Component{
 class Textinput extends React.Component{
     render(){
         return(
-            <div>
-            <p></p>
-            <input type="text" placeholder="key words" value={this.props.content} onChange={this.props.onChange}></input>
+            <div style={{ margin: '0,0,10px,0'}}>{/*style don't work*/}
+            <input type="text" style={{width:500,padding: 5}} placeholder="key words" value={this.props.content} onChange={this.props.onChange}></input>
             </div>
         );
     }
@@ -72,13 +70,14 @@ class Textinput extends React.Component{
 
 class Textselect extends React.Component {
     render() {
-        return (
-            <div className="search-where">
+        const labelstyle={marginLeft:10,};
+        return ( 
+            <div className="search-where" style={{marginTop:10,}}>
                 <span>Search in</span>
-                <label><input type="checkbox" name="Title" onClick={this.props.onClick}></input>Title</label>
-                <label><input type="checkbox" name="Author name(s)" onClick={this.props.onClick}></input>Author name(s)</label>
-                <label><input type="checkbox" name="Abstract" onClick={this.props.onClick}></input>Abstract</label>
-                <label><input type="checkbox" name="Key words" onClick={this.props.onClick}></input>Key words</label>     
+                <label style={labelstyle}><input type="checkbox" name="Title" onClick={this.props.onClick}></input>Title</label>
+                <label style={labelstyle}><input type="checkbox" name="Author name(s)" onClick={this.props.onClick}></input>Author name(s)</label>
+                <label style={labelstyle}><input type="checkbox" name="Abstract" onClick={this.props.onClick}></input>Abstract</label>
+                <label style={labelstyle}><input type="checkbox" name="Key words" onClick={this.props.onClick}></input>Key words</label>     
             </div>
         );
     }
