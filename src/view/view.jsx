@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import Sider from '../component/Sider';
-import Sidernext from '../component/Sider';
 import Header from '../component/Header';
 import '../static/css/right-wrapper.less';
 import '../static/css/content.less';
