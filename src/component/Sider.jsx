@@ -35,7 +35,7 @@ Sider.defaultProps = {
     pathMap: [
         {
             name: 'Our journals',
-            path: '/home',
+            path: '/Journals',
         },
         {
             name: 'Search',
