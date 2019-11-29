@@ -4,6 +4,8 @@ import View from './view/View.jsx';
 import Publication from '../src/component/Publication';
 import Deadlines from '../src/component/Deadlines';
 import Search from './component/Search';
+import Journals from './component/Journals';
+import Submit from './component/Submit';
 const routes = [
     /*/
      {
@@ -19,7 +21,7 @@ const routes = [
         routes: [
             {
                 path: '/journals',
-                component: Home,
+                component: Journals,
                 exact: true,
             },
             {
@@ -41,7 +43,12 @@ const routes = [
                 path: '/Search',
                 component: Search,
                 exact: true,
-            },               
+            },
+            {
+                path: '/Submit',
+                component:Submit,
+                exact: true,
+            },                        
         ],
     },
 ];
