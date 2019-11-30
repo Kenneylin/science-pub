@@ -24,10 +24,11 @@ export default class Submit extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.onInputChange=this.onInputChange.bind(this);
         this.handlebox=this.handlebox.bind(this);
-        this.handleclick=this.handleclick.bind(this);
+        this.handleSubmit=this.handleSubmit.bind(this);
     }
 //submit the data
-    handleclick(){
+    handleSubmit(e){
+        e.preventDefault();
         const arr=this.state;
         
     }
@@ -133,7 +134,7 @@ export default class Submit extends Component {
         return (
             <div>
 
-                <form action="?" method="post" encType="multipart/form-data" noValidate="noValidate">
+                <form action="?" method="post" encType="multipart/form-data" noValidate="noValidate" onSubmit={this.handleSubmit}>
 
                 <h1>Submit a manuscript</h1>
 
@@ -199,7 +200,7 @@ export default class Submit extends Component {
 
                 {this.state.box.join('-')}
 
-                <div className="submit"><input type="submit" name="izprati" value="Submit" onClick={this.handleclick}/></div>
+                <div className="submit"><input type="submit" name="izprati" value="Submit" /></div>
 
                 </form>
             </div>
@@ -212,13 +213,15 @@ class Textselect extends React.Component {
     render() {
         const arr = this.props.arr;
         const list=arr.map((item,index)=>
-            <option key={index} value={item.value}>{item.text}</option>
+            <option key={index.toString()} value={item.value}>{item.text}</option>
+            ,{/*键”是创建元素列表时需要包括的特殊字符串属性。<li key={number.toString()}> 
+            // Correct! Key should be specified inside the array.*/}
         );
         return (          
                 <label> 
                 <span>{this.props.spanname}</span>
                 <select name={this.props.name} onChange={this.props.onChange}>
-                <option value="none">— please select —</option>
+                <option value="none">— please select —</option> 
                     {list}    
                 </select>
                 </label>
