@@ -41,13 +41,14 @@ class Textbutton extends React.Component{
         );
     }
     render(){
+       
         return(
             <div>
                 <p>  {this.state.text} </p>
 
-                <Textinput onChange={this.handleinput}/>
+                <Textinput  onChange={this.handleinput}/>
 
-                <Textselect onClick={this.handleclick}/>
+                <Textselect  onClick={this.handleclick}/>
 
                 <p>{this.state.arrselect.join("-")}</p>
 
@@ -70,14 +71,14 @@ class Textinput extends React.Component{
 
 class Textselect extends React.Component {
     render() {
-        const labelstyle={marginLeft:10,};
+        const labelstyle={marginLeft:10};
         return ( 
             <div className="search-where" style={{marginTop:10,}}>
                 <span>Search in</span>
-                <label style={labelstyle}><input type="checkbox" name="Title" onClick={this.props.onClick}></input>Title</label>
-                <label style={labelstyle}><input type="checkbox" name="Author name(s)" onClick={this.props.onClick}></input>Author name(s)</label>
-                <label style={labelstyle}><input type="checkbox" name="Abstract" onClick={this.props.onClick}></input>Abstract</label>
-                <label style={labelstyle}><input type="checkbox" name="Key words" onClick={this.props.onClick}></input>Key words</label>     
+                <label style={labelstyle}><input style={{width:12.8}} type="checkbox" name="Title" onClick={this.props.onClick}></input>Title</label>
+                <label style={labelstyle}><input style={{width:12.8}} type="checkbox" name="Author name(s)" onClick={this.props.onClick}></input>Author name(s)</label>
+                <label style={labelstyle}><input style={{width:12.8}} type="checkbox" name="Abstract" onClick={this.props.onClick}></input>Abstract</label>
+                <label style={labelstyle}><input style={{width:12.8}} type="checkbox" name="Key words" onClick={this.props.onClick}></input>Key words</label>     
             </div>
         );
     }
