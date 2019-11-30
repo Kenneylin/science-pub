@@ -7,18 +7,17 @@ import Search from './component/Search';
 import Journals from './component/Journals';
 import Submit from './component/Submit';
 const routes = [
-    /*/
-     {
-         path: '/',
-         component: Home,
-         exact: true,
-     },
-     */
+    
     {
         path: '/',
         component: View,
         exact: false,
         routes: [
+            {
+                path: '/',
+                component: Journals,
+                exact: true,
+            },
             {
                 path: '/journals',
                 component: Journals,
