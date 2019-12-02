@@ -2,37 +2,23 @@ import React, { Component } from 'react';
 import '../static/css/header.less';
 
 export default class Header extends Component {
-    render() {  
+    render() {
+        console.log(this.props.location.pathname);
         const arrimg =
-        [
-           {
-            name: 'Our journals',
-            src : '../src/static/img/01.jpg',
-           },
-           {
-            name: 'Seach',
-            src : '../src/static/img/02.jpg',
-           },
-           {
-            name: 'Publication requirements',
-            src : '../src/static/img/03.jpg',
-           },
-           {
-            name: 'Deadlines and fees',
-            src : '../src/static/img/04.jpg',
-           },
-           {
-            name: 'Submit a manuscipt',
-            url : '../src/static/img/05.jpg',
-           },
-           {
-            name: 'Contacts',
-            src : '../src/static/img/06.jpg',
-           },
-        ];       
+        {
+            '/journals': '../src/static/img/journal.jpg',
+            '/search': '../src/static/img/search.jpg',
+            '/contacts': '../src/static/img/contact.jpg',
+            '/publication': '../src/static/img/publication.jpg',
+            '/submit': '../src/static/img/sumbit.jpg',
+            '/deadlines': '../src/static/img/fees.jpg',
+            '/': '../src/static/img/journal.jpg',
+        };
+        const imgPath = arrimg[this.props.location.pathname];
+        console.log(imgPath);
         return (
             <div>
-                <img src='../src/static/img/06.jpg'></img>
+                <img src={imgPath}></img>
             </div>
         );
     }
