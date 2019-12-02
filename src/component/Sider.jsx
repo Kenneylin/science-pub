@@ -14,7 +14,7 @@ export default class Sider extends Component {
         const { pathMap } = this.props;
         const list = pathMap.map((item, index) => 
             <li key={index}>
-                <a href='/'  className={item.className} style={{backgroundImage:item.image_url}}> {item.name}</a>               
+                <a href='/'  className={item.className} style={{backgroundImage:"url(" + item.image_url + ")"}}> {item.name}</a>               
             </li>
         );
         // console.log(list[0].props.children.props.style);
