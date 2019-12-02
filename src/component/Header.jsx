@@ -3,7 +3,6 @@ import '../static/css/header.less';
 
 export default class Header extends Component {
     render() {
-        console.log(this.props.location.pathname);
         const arrimg =
         {
             '/journals': '../src/static/img/journal.jpg',
@@ -15,7 +14,6 @@ export default class Header extends Component {
             '/': '../src/static/img/journal.jpg',
         };
         const imgPath = arrimg[this.props.location.pathname];
-        console.log(imgPath);
         return (
             <div>
                 <img src={imgPath}></img>
