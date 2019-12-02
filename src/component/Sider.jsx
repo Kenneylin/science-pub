@@ -14,9 +14,14 @@ export default class Sider extends Component {
         const { pathMap } = this.props;
         const list = pathMap.map((item, index) => 
             <li key={index}>
-                <a href='/'> {item.name}</a>
+                <a href='/'  className={item.className} style={{backgroundImage:item.image_url}}> {item.name}</a>               
             </li>
         );
+        // console.log(list[0].props.children.props.style);
+        // console.log(list[1].props.children.props.style);
+        for(let i=0;i<6;i++){
+            console.log(list[i].props.children.props.style);
+        }
         return (
             <div className='nv'>
                     <div className="p">
@@ -36,34 +41,39 @@ Sider.defaultProps = {
     pathMap: [
         {
             name: 'Our journals',
-            path: '/journals',
+            path: '/journals',           
             className:'journals',
+            image_url:'../static/img/Sider/journals.jpg'
         },
         {
             name: 'Search',
-            path: '/search',
+            path: '/search',          
             className:'search',
+            image_url:'../static/../img/Sider/search.jpg'
         },
         {
             name: 'Publication requirements',
-            path: '/publication',
+            path: '/publication',          
             className:'publication',
-            
+            image_url:'../static/../img/Sider/publication.png'           
         },
         {
             name: 'Deadlines and fees',
-            path: '/deadlines',
-            className:'/deadlines',
+            path: '/deadlines',           
+            className:'deadlines',
+            image_url:'../static/../img/Sider/deadlines.png'
         },
         {
             name: 'Submit a manuscipt',
-            path: '/submit',
+            path: '/submit',           
             className:'submit',
+            image_url:'../static/../img/Sider/submit.png'
         },
         {
             name: 'Contacts',
-            path: '/contacts',
+            path: '/contacts',           
             className:'contacts',
+            image_url:'../static/../img/Sider/contacts.png'
         },
     ],
 };
