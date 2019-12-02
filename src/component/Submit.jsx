@@ -18,8 +18,6 @@ export default class Submit extends Component {
             journal:'',
             manuscript:'',  
             box:[],
-
-
         };
         this.handleChange = this.handleChange.bind(this);
         this.onInputChange=this.onInputChange.bind(this);

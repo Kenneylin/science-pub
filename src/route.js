@@ -24,27 +24,27 @@ const routes = [
                 exact: true,
             },
             {
-                path: '/Contacts',
+                path: '/contacts',
                 component: Contacts,
                 exact: true,
             },
             {
-                path: '/Publication',
+                path: '/publication',
                 component: Publication,
                 exact: true,
             },  
             {
-                path: '/Deadlines',
+                path: '/deadlines',
                 component: Deadlines,
                 exact: true,
             },   
             {
-                path: '/Search',
+                path: '/search',
                 component: Search,
                 exact: true,
             },
             {
-                path: '/Submit',
+                path: '/submit',
                 component:Submit,
                 exact: true,
             },                        

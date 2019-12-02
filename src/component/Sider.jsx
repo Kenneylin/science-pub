@@ -14,7 +14,7 @@ export default class Sider extends Component {
         const { pathMap } = this.props;
         const list = pathMap.map((item, index) => 
             <li key={index}>
-                <a href='/'>{item.name}</a>
+                <a href='/'> {item.name}</a>
             </li>
         );
         return (
@@ -27,6 +27,7 @@ export default class Sider extends Component {
                 <ul id='nav' onClick={(e) => this.handleClick(e)}>
                     {list}
                 </ul>
+                <div className="copy">© 2019 Science Events Ltd<br></br><a href="https://www.scientific-publications.net/en/terms-of-use/">Terms of Use</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://www.scientific-publications.net/en/privacy/">Privacy Policy</a></div>
             </div>
         );
     }
@@ -35,27 +36,34 @@ Sider.defaultProps = {
     pathMap: [
         {
             name: 'Our journals',
-            path: '/Journals',
+            path: '/journals',
+            className:'journals',
         },
         {
             name: 'Search',
-            path: '/Search',
+            path: '/search',
+            className:'search',
         },
         {
             name: 'Publication requirements',
-            path: '/Publication',
+            path: '/publication',
+            className:'publication',
+            
         },
         {
             name: 'Deadlines and fees',
-            path: '/Deadlines',
+            path: '/deadlines',
+            className:'/deadlines',
         },
         {
             name: 'Submit a manuscipt',
-            path: '/Submit',
+            path: '/submit',
+            className:'submit',
         },
         {
             name: 'Contacts',
             path: '/contacts',
+            className:'contacts',
         },
     ],
 };

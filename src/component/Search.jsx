@@ -44,7 +44,6 @@ class Textbutton extends React.Component{
        
         return(
             <div>
-                <p>  {this.state.text} </p>
 
                 <Textinput  onChange={this.handleinput}/>
 
