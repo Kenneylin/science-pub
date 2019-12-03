@@ -26,10 +26,10 @@ export default class Sider extends Component {
         
 		return (
             <div className='nv'>
-                    <div className="p">
-                         <div>International</div>
-                         <div>Scientific</div>
-                         <div>Publications</div>
+                    <div className="up">
+                         <p>International</p>
+                         <p>Scientific</p>
+                         <p>Publications</p>
                     </div>
                 <ul id='nav' onClick={(e) => this.handleClick(e)}>
                     {list}
