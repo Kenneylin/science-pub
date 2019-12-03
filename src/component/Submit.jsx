@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../static/css/Submit.less';
+import '../static/css/submit.less';
 
 export default class Submit extends Component {  
     constructor(props) {

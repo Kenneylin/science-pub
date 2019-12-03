@@ -11,6 +11,8 @@ export default class Header extends Component {
             '/publication': '../src/static/img/publication.jpg',
             '/submit': '../src/static/img/sumbit.jpg',
             '/deadlines': '../src/static/img/fees.jpg',
+            '/terms': '../src/static/img/terms.jpg',
+            '/private': '../src/static/img/private.jpg',
             '/': '../src/static/img/journal.jpg',
         };
         const imgPath = arrimg[this.props.location.pathname];
