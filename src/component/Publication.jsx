@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../static/css/publication .less';
+import '../static/css/publication.less';
 
 export default class Publication extends Component {
     render() {
