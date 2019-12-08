@@ -7,31 +7,31 @@ export default class Journals extends Component {
 			[
 				{
 					name: 'Agriculture & Food',
-					href : '"https://www.scientific-publications.net/en/open-access-journals/agriculture-and-food',
+					href : '/agriculture',
 				},
 				{
 					name: 'Ecology & Safety',
-					href : 'https://www.scientific-publications.net/en/open-access-journals/ecology-and-safety/',
+					href : '',
 				},
 				{
 					name: 'Materials, Methods & Technologies',
-					href : '../src/static/img/03.jpg',
+					href : '',
 				},
 				{
-					name: 'Economy &amp; Business',
-					href : '../src/static/img/04.jpg',
+					name: 'Economy & Business',
+					href : '',
 				},
 				{
 					name: 'Educational Alternatives',
-					href : '../src/static/img/05.jpg',
+					href : '',
 				},
 				{
 					name: 'Language, Individual & Society',
-					href : '../src/static/img/06.jpg',
+					href : '',
 				},
 				{
 					name: 'Media & Mass Communication',
-					href : '../src/static/img/06.jpg',
+					href : '',
 				},
 			];
 		
@@ -52,18 +52,3 @@ export default class Journals extends Component {
 		);
 	}
 }
-
-
-/*
-<ul class="journals">
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/agriculture-and-food/">Agriculture &amp; Food</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/ecology-and-safety/">Ecology &amp; Safety</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/materials-methods-and-technologies/">Materials, Methods &amp; Technologies</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/economy-and-business/">Economy &amp; Business</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/educational-alternatives/">Educational Alternatives</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/language-individual-and-society/">Language, Individual &amp; Society</a></li>
-<li><a href="https://www.scientific-publications.net/en/open-access-journals/media-and-mass-communication/">Media &amp; Mass Communication</a></li>
-</ul>
-
-
-*/
