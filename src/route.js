@@ -7,6 +7,8 @@ import Journals from './component/Journals';
 import Submit from './component/Submit';
 import Terms from './component/Terms';
 import Private from './component/Private';
+import Agriculture from './component/journalcontent/Agriculture';
+
 const routes = [
 	{
 		path: '/',
@@ -22,6 +24,13 @@ const routes = [
 				path: '/journals',
 				component: Journals,
 				exact: true,
+				routes: [
+					{
+						path: '/agriculture',
+						component: Agriculture,
+						exact: true,
+					},
+				],
 			},
 			{
 				path: '/contacts',
